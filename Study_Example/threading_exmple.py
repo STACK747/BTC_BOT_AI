@@ -19,7 +19,9 @@ import time
 #   with multiprocessing.Pool(4) as pool:  # 4 个 CPU 核心并行计算
 #       results = pool.map(compute, range(10))
 #   print(results)
-
+#另外：join() 方法让 主线程等待子线程执行完毕，再继续执行主线程的后续代码。
+#Lock（锁）用于 避免多个线程同时访问共享资源，防止数据竞争（race condition）。
+#为什么需要锁？多个线程同时修改共享变量时，可能会导致数据不一致。
 
 # 模拟数据采集任务
 def fetch_data():
