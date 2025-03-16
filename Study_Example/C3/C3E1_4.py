@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 import os
 import matplotlib.pyplot as plt
-#Study_Example/C3E1/random_data.csv
+#Study_Example/C3/random_data.csv
 df = pd.read_csv('random_data.csv')
 df['Column_1'][:500].plot()
 df['Column_2'][:500].plot()
