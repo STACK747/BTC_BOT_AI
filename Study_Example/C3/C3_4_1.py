@@ -5,3 +5,12 @@
 #四分位距是第三四分位数与第一四分位数的差值，即Q3-Q1。
 #四分位差是一组数据的上四分位数与下四分位数之差，即Q3-Q1。
 #图形识别：箱线图：从下到上依次是下边缘，Q1,中位数，Q3,上边缘，异常值。
+#箱线图绘制
+import matplotlib.pyplot as plt
+import numpy as np
+data = np.random.normal(2, 10, 500)
+#np.random.normal的参数分别是loc（均值），scale（标准差），size（输出的shape）
+plt.boxplot(data, patch_artist=True, showmeans=True)
+plt.show()
+
+
